@@ -49,7 +49,13 @@ public class Student implements Comparable<Student>{
 	 for (Student s : al) {
 		 System.out.println(s.toString());
 	 }
+	System.out.println("Student List (reverse ordered by name)");
 	
+	Collections.sort(al, Collections.reverseOrder());
+	
+	for(int i=0; i<al.size(); i++) {
+		System.out.println(al.get(i).toString());
+	}
  }
 
 @Override
